@@ -1,0 +1,144 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-main-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-main-color: #f4f4fd;
+  --model-overlay-color: #2e2f42;
+  --dark-background-color: #2e2f42;
+  --light-background-color: #ffffff;
+  --modal-background: #fcfcfc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.body-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-main-color);
+}
+
+.body-text-inverted {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-main-color);
+}
+
+.nav-text {
+  font-weight: 500;
+  color: var(--dark-main-color);
+}
+
+.address-text {
+  font-weight: 400;
+  color: var(--text-color);
+  font-style: normal;
+}
+
+.logo-text-first-section {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--primary-brand-color);
+  text-transform: capitalize;
+}
+
+.logo-text-second-section {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--dark-main-color);
+  text-transform: capitalize;
+}
+
+.logo-text-second-section-inverted {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--light-main-color);
+  text-transform: capitalize;
+}
+
+.main-title-text {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.sub-header-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.small-header-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.hero,
+.footer {
+  background-color: var(--dark-background-color);
+}
+
+.hero-text {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--light-background-color);
+  text-align: center;
+}
+
+.hero-button {
+  color: var(--light-background-color);
+  background-color: var(--primary-brand-color);
+}
+
+.filter-button {
+  color: var(--primary-brand-color);
+  background-color: var(--light-main-color);
+}
+
+.filter-button:hover {
+  color: var(--light-background-color);
+  background-color: var(--pressed-state-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-with-light-wrapper {
+  background-color: var(--light-main-color);
+}
+
+.element-with-light-wrapper > li {
+  background-color: var(--light-background-color);
+}
