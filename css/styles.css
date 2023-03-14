@@ -18,6 +18,15 @@ a {
   color: inherit;
 }
 
+a:active {
+  color: var(--pressed-state-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-brand-color);
+}
+
 li {
   list-style: none;
 }
@@ -108,13 +117,17 @@ li {
 }
 
 .hero-button {
+  font-weight: 500;
   color: var(--light-background-color);
   background-color: var(--primary-brand-color);
 }
 
 .filter-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
   color: var(--primary-brand-color);
   background-color: var(--light-main-color);
+  cursor: pointer;
 }
 
 .filter-button:hover {
