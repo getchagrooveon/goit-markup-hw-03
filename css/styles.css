@@ -18,6 +18,11 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -63,8 +68,13 @@ li {
 
 .nav-text {
   display: flex;
+  align-items: center;
   font-weight: 500;
   color: var(--dark-main-color);
+}
+
+.nav-text a {
+  display: block;
 }
 
 .nav-container {
@@ -98,7 +108,7 @@ li {
   margin-left: auto;
 }
 
-.header-container {
+.header {
   max-width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
@@ -106,7 +116,7 @@ li {
   margin-right: auto;
   justify-content: baseline;
 }
-.logo-container {
+.header-container {
   display: flex;
   align-items: center;
   padding-left: 0;
@@ -115,10 +125,6 @@ li {
   border-width: 1px;
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.logo-text-first-section .address-container {
-  display: flex;
 }
 
 .logo-text-first-section,
@@ -181,6 +187,7 @@ logo-text-second-section {
 
 .hero {
   text-align: center;
+  padding: 188px 0;
 }
 
 .team-outer-container {
@@ -217,7 +224,6 @@ logo-text-second-section {
   text-align: center;
   max-width: 496px;
   margin-top: 0;
-  padding-top: 188px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,7 +238,6 @@ logo-text-second-section {
   border-radius: 4px;
   border: 0;
   margin-top: 48px;
-  margin-bottom: 188px;
   cursor: pointer;
 }
 
@@ -286,6 +291,11 @@ logo-text-second-section {
   margin-right: auto;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
 .hero-text-container {
   padding-top: 188px;
   margin-left: auto;
@@ -301,14 +311,9 @@ logo-text-second-section {
   padding-bottom: 100px;
 }
 
-.hero-container {
+.container-hero {
   text-align: center;
   align-items: center;
-  max-width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-position {
@@ -374,6 +379,10 @@ logo-text-second-section {
   margin-top: 8px;
 }
 
+.core-values {
+  padding-top: 120px;
+}
+
 .what-are-we-doing-header-text {
   font-weight: 700;
   font-size: 36px;
@@ -396,8 +405,8 @@ logo-text-second-section {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .footer-text .body-text-inverted {
@@ -416,12 +425,21 @@ logo-text-second-section {
   padding-bottom: 72px;
 }
 
-.gallery-container {
+.gallery-filter {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 72px;
+}
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
   padding-right: 0;
   padding-left: 0;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
   margin-left: 0;
   margin-right: 0;
   row-gap: 48px;
